@@ -1,0 +1,33 @@
+.swipeButtons {
+  position: fixed;
+  bottom: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.swipeButtons__icon {
+  background-color: #fff;
+  box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.6) !important;
+  padding: 10px !important;
+}
+
+.swipeButton__reply {
+  color: red !important;
+}
+
+.swipeButton__star {
+  color: green !important;
+}
+
+.swipeButton__favorite {
+  color: blue !important;
+}
+
+.swipeButton__close {
+  color: yellow !important;
+}
+
+.swipeButton__flash {
+  color: blueviolet !important;
+}
