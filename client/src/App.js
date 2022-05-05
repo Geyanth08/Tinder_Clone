@@ -14,7 +14,3 @@ function App() {
 }
 
 export default App;
-
-// Tech Used
-//  1. Material UI - for icons
-//  2. Frontend - React Framework

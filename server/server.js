@@ -2,12 +2,16 @@ import express from "express";
 import mongoose from "mongoose";
 import Cors from "cors";
 import Cards from "./tinderDB.js";
+import dotenv from "dotenv";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 
-// // App Config
+// App Config
 const app = express();
+const __dirname = dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: __dirname + "/.env" });
 const port = process.env.PORT || 8001;
-const Mongodb_URL =
-  "mongodb+srv://nani20:Nani2002@cluster0.kcy5t.mongodb.net/tinderDB?retryWrites=true&w=majority";
+const Mongodb_URL = process.env.MONGODB_URL;
 
 // // Middlewares
 app.use(express.json());
